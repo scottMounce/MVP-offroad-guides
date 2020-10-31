@@ -4,8 +4,8 @@
   > Project off-road allows us to connect the advanced off-road community to the new off-roader.  
 
 ## Summary ##  
-  * Project Off-Road will define the next level of off-road prowess. 
-  * We offer guides through some of the most known trails,   
+  * Project Off-Road will define the next level of off-road prowess 
+  * We offer guides through some of the most known trails   
   * We offer shop recommendations on where to get your next upgrades
   * We offer 1 on 1 consulting with advanced off-road industry professionals 
   * We offer basic and advanced off-road and recovery training
