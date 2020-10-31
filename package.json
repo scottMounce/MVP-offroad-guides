@@ -1,0 +1,29 @@
+{
+  "name": "MVP-offroad-guides",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -d --watch",
+    "start": "nodemon server/index.js"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottMounce/MVP-offroad-guides.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scottMounce/MVP-offroad-guides/issues"
+  },
+  "homepage": "https://github.com/scottMounce/MVP-offroad-guides#readme",
+  "devDependencies": {
+    "webpack": "^4.44.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
