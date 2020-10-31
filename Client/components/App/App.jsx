@@ -1,16 +1,24 @@
 import React, { useState, useEffect } from 'react';
+import Shops from '../Shops/Shops.jsx';
 
 
 const App = () => {
-  const [count, setCount] = useState(0);
+  const [page, setPage] = useState('home');
 
 
+  const renderView = () => {
+    if (page === 'home') {
+      return <Shops />
+    }
+  }
+  
+  
   return (
     <div>
-      Hello World!
+      <div>{renderView()}</div>
     </div>
   )
-
+    
 
 }
 
