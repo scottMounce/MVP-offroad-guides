@@ -1,0 +1,24 @@
+.googleMap {
+  width: 60vh;
+  height: 60vh;
+}
+.pin {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  color: red;
+}
+
+.pinIcon {
+  font-size: 4rem;
+}
+
+.pinText {
+  font-size: 1.3em;
+  color: black;
+}
+
+.shopName {
+  font-size: 1.6em;
+  color: red;
+}

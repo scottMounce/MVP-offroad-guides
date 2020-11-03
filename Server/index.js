@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
+const OffroadShop = require('../DB/shop.js');
+require('dotenv').config()
+
 
 const port = 3010;
 
@@ -8,8 +11,10 @@ app.use(cors())
 app.use(express.static(__dirname + '/../public'));
 
 
-app.get('/', (req, res) => {
-  res.send('hello')
+app.get('/shops', (req, res) => {
+  OffroadShop.find({})
+  .then((results) => res.json(results))
+  .catch((error) => console.log(error))
 })
 
 app.listen(port, () => {

@@ -1,10 +1,16 @@
 import React from 'react';
+import Shop from '../Shop/Shop.jsx';
 
 
-const Shops = () => {
+const Shops = ({shops}) => {
   return (
     <div>
-      hello world
+      {shops.map((shop) => {
+        return <Shop 
+        key={shop._id}
+        shop={shop}
+        />
+      })}
     </div>
   )
   
