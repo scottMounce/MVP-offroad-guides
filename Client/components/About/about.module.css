@@ -1,0 +1,47 @@
+.whoWeAre {  
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Permanent Marker', cursive;  
+  align-items: center;  
+}
+
+.offers {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Permanent Marker', cursive;  
+  align-items: center;  
+}
+
+.problem {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Permanent Marker', cursive;  
+  align-items: center;  
+}
+
+.solution {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Permanent Marker', cursive;  
+  align-items: center;  
+}
+
+.joinNow {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Permanent Marker', cursive;  
+  align-items: center;  
+  font-size: 25px;
+  color: red;
+
+}
