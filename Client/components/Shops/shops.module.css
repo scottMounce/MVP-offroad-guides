@@ -1,0 +1,7 @@
+.recommended {
+  font-size: 25px;
+  z-index: 1;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;  
+  padding-top: 2%;
+}

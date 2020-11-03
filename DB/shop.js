@@ -11,6 +11,11 @@ const offroadSchema = new mongoose.Schema ({
   coords: String
 })
 
+
+
+
 const OffroadShop = mongoose.model('OffroadShop', offroadSchema);
+
+
 
 module.exports = OffroadShop;

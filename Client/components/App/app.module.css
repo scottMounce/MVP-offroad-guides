@@ -12,3 +12,12 @@ span:hover {
 
 }
 
+.logo {
+  width: 225px;
+  height: 90px;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+

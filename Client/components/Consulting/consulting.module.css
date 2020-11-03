@@ -1,0 +1,43 @@
+.provide {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Permanent Marker', cursive;  
+  align-items: center;
+}
+
+.inputForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.textArea {
+  height: 500px;
+}
+
+.submitButton {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  max-width: 100px;
+  font-family: 'Permanent Marker', cursive;  
+  padding: 25px;
+  border-radius: 90px;
+  margin-left: 47%;  
+  background-color: rgb(59, 160, 64);
+}
+
+.personal {    
+  display: flex;
+  flex-direction: column;  
+  padding-bottom: 20px;  
+  align-items: center;  
+}
+
+.vehicle {
+  display: flex;
+  flex-direction: column;  
+  padding-bottom: 20px;
+  align-items: center;
+}

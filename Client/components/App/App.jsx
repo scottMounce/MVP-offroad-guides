@@ -12,6 +12,7 @@ import styles from './app.module.css';
 const App = () => {
   const [page, setPage] = useState('home');
   const [shops, setShops] = useState([]);
+  const [trails, setTrails] = useState([]);
 
 
   useEffect(() => {
@@ -21,6 +22,18 @@ const App = () => {
     })
     .then((results) => {
       setShops(results);
+    })
+    .then(() => {
+      fetch('/trails')
+      .then((res) => {
+        return res.json();
+      })
+      .then((results) => {
+        setTrails(results)
+      })
+      .catch((error) => {
+        console.log(error);
+      })
     })
     .catch((error) => {
       console.log(error);
@@ -37,7 +50,7 @@ const App = () => {
     } else if (page === 'shops') {
       return <Shops shops={shops}/>
     } else if (page === 'trails') {
-      return <Trails />
+      return <Trails trails={trails}/>
     } else if (page === 'consulting') {
       return <Consulting />
     } else if (page === 'about') {
@@ -55,10 +68,7 @@ const App = () => {
   return (
     <div>
       <div className={styles.nav}>
-        <span className={styles.logo}
-        onClick={() => {changeView('home')}}        
-        > Project Off-Road        
-        </span>
+      <img className={styles.logo}src={'https://reviewsimages.s3-us-west-1.amazonaws.com/Project+Off-Road+Twitter+Cover-01.jpg'} onClick={() => {changeView('home')}}/>                        
         <span
         onClick={() => {changeView('shops')}}
         > Shops  

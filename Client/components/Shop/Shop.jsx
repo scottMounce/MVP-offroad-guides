@@ -15,13 +15,15 @@ const Shop = ({shop}) => {
   let zoomLevel = 12;  
   
   return (
-    <div>      
-      <div>{shop.name}</div>
-      <img src={shop.logo}/>
-      <div>{shop.address}</div>
-      <div>{shop.phone}</div>
-      <div>{shop.email}</div>                
-      <Map location={location} zoomLevel={zoomLevel} shop={shop}/> 
+    <div className={styles.shopContainer}>      
+      <div className={styles.info}>
+        <img className={styles.logo}src={shop.logo}/>
+        <div className ={styles.shopName}>{shop.name}</div>
+        <div className={styles.address}>{shop.address}</div>
+        <div className={styles.phone}>{shop.phone}</div>
+        <div className={styles.email}>{shop.email}</div>                
+      </div>
+      <Map className={styles.map}location={location} zoomLevel={zoomLevel} shop={shop}/> 
     </div>
   )
 }
