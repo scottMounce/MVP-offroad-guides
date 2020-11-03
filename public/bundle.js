@@ -86,6 +86,18 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./Client/components/About/About.jsx":
+/*!*******************************************!*\
+  !*** ./Client/components/About/About.jsx ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar About = function About() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null);\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (About);\n\n//# sourceURL=webpack:///./Client/components/About/About.jsx?");
+
+/***/ }),
+
 /***/ "./Client/components/App/App.jsx":
 /*!***************************************!*\
   !*** ./Client/components/App/App.jsx ***!
@@ -94,7 +106,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Shops_Shops_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Shops/Shops.jsx */ \"./Client/components/Shops/Shops.jsx\");\n/* harmony import */ var _app_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app.module.css */ \"./Client/components/App/app.module.css\");\nfunction _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }\n\nfunction _nonIterableRest() { throw new TypeError(\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"); }\n\nfunction _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }\n\nfunction _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }\n\nfunction _iterableToArrayLimit(arr, i) { if (typeof Symbol === \"undefined\" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i[\"return\"] != null) _i[\"return\"](); } finally { if (_d) throw _e; } } return _arr; }\n\nfunction _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }\n\n\n\n\n\nvar App = function App() {\n  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useState\"])('home'),\n      _useState2 = _slicedToArray(_useState, 2),\n      page = _useState2[0],\n      setPage = _useState2[1];\n\n  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useState\"])([]),\n      _useState4 = _slicedToArray(_useState3, 2),\n      shops = _useState4[0],\n      setShops = _useState4[1];\n\n  Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useEffect\"])(function () {\n    fetch('/shops').then(function (res) {\n      return res.json();\n    }).then(function (results) {\n      setShops(results);\n    })[\"catch\"](function (error) {\n      console.log(error);\n    });\n  }, []);\n\n  var renderView = function renderView() {\n    if (page === 'home') {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Shops_Shops_jsx__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n        shops: shops\n      });\n    }\n  };\n\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: _app_module_css__WEBPACK_IMPORTED_MODULE_2__[\"default\"].nav\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n    className: _app_module_css__WEBPACK_IMPORTED_MODULE_2__[\"default\"].logo\n  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, renderView()));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (App);\n\n//# sourceURL=webpack:///./Client/components/App/App.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Shops_Shops_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Shops/Shops.jsx */ \"./Client/components/Shops/Shops.jsx\");\n/* harmony import */ var _Home_Home_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Home/Home.jsx */ \"./Client/components/Home/Home.jsx\");\n/* harmony import */ var _Signup_SignUp_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Signup/SignUp.jsx */ \"./Client/components/Signup/SignUp.jsx\");\n/* harmony import */ var _Login_Login_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Login/Login.jsx */ \"./Client/components/Login/Login.jsx\");\n/* harmony import */ var _Consulting_Consulting_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Consulting/Consulting.jsx */ \"./Client/components/Consulting/Consulting.jsx\");\n/* harmony import */ var _Trails_Trails_jsx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Trails/Trails.jsx */ \"./Client/components/Trails/Trails.jsx\");\n/* harmony import */ var _About_About_jsx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../About/About.jsx */ \"./Client/components/About/About.jsx\");\n/* harmony import */ var _app_module_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app.module.css */ \"./Client/components/App/app.module.css\");\nfunction _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }\n\nfunction _nonIterableRest() { throw new TypeError(\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"); }\n\nfunction _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }\n\nfunction _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }\n\nfunction _iterableToArrayLimit(arr, i) { if (typeof Symbol === \"undefined\" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i[\"return\"] != null) _i[\"return\"](); } finally { if (_d) throw _e; } } return _arr; }\n\nfunction _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }\n\n\n\n\n\n\n\n\n\n\n\nvar App = function App() {\n  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useState\"])('home'),\n      _useState2 = _slicedToArray(_useState, 2),\n      page = _useState2[0],\n      setPage = _useState2[1];\n\n  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useState\"])([]),\n      _useState4 = _slicedToArray(_useState3, 2),\n      shops = _useState4[0],\n      setShops = _useState4[1];\n\n  Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useEffect\"])(function () {\n    fetch('/shops').then(function (res) {\n      return res.json();\n    }).then(function (results) {\n      setShops(results);\n    })[\"catch\"](function (error) {\n      console.log(error);\n    });\n  }, []);\n\n  var changeView = function changeView(view) {\n    setPage(view);\n  };\n\n  var renderView = function renderView() {\n    if (page === 'home') {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Home_Home_jsx__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null);\n    } else if (page === 'shops') {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Shops_Shops_jsx__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n        shops: shops\n      });\n    } else if (page === 'trails') {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Trails_Trails_jsx__WEBPACK_IMPORTED_MODULE_6__[\"default\"], null);\n    } else if (page === 'consulting') {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Consulting_Consulting_jsx__WEBPACK_IMPORTED_MODULE_5__[\"default\"], null);\n    } else if (page === 'about') {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_About_About_jsx__WEBPACK_IMPORTED_MODULE_7__[\"default\"], null);\n    } else if (page === 'signUp') {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Signup_SignUp_jsx__WEBPACK_IMPORTED_MODULE_3__[\"default\"], null);\n    } else if (page === 'login') {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Login_Login_jsx__WEBPACK_IMPORTED_MODULE_4__[\"default\"], null);\n    }\n  };\n\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: _app_module_css__WEBPACK_IMPORTED_MODULE_8__[\"default\"].nav\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n    className: _app_module_css__WEBPACK_IMPORTED_MODULE_8__[\"default\"].logo,\n    onClick: function onClick() {\n      changeView('home');\n    }\n  }, \" Project Off-Road\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n    onClick: function onClick() {\n      changeView('shops');\n    }\n  }, \" Shops\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n    onClick: function onClick() {\n      changeView('trails');\n    }\n  }, \" Trails\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n    onClick: function onClick() {\n      changeView('consulting');\n    }\n  }, \" Consulting\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n    onClick: function onClick() {\n      changeView('about');\n    }\n  }, \" About\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n    onClick: function onClick() {\n      changeView('signUp');\n    }\n  }, \" Sign-Up\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n    onClick: function onClick() {\n      changeView('login');\n    }\n  }, \" Login\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, renderView()));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (App);\n\n//# sourceURL=webpack:///./Client/components/App/App.jsx?");
 
 /***/ }),
 
@@ -107,6 +119,42 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_5_1_app_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-1!./app.module.css */ \"./node_modules/css-loader/dist/cjs.js?!./Client/components/App/app.module.css\");\n\n            \n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ref_5_1_app_module_css__WEBPACK_IMPORTED_MODULE_1__[\"default\"], options);\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_node_modules_css_loader_dist_cjs_js_ref_5_1_app_module_css__WEBPACK_IMPORTED_MODULE_1__[\"default\"].locals || {});\n\n//# sourceURL=webpack:///./Client/components/App/app.module.css?");
+
+/***/ }),
+
+/***/ "./Client/components/Consulting/Consulting.jsx":
+/*!*****************************************************!*\
+  !*** ./Client/components/Consulting/Consulting.jsx ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar Consulting = function Consulting() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"form\", null);\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Consulting);\n\n//# sourceURL=webpack:///./Client/components/Consulting/Consulting.jsx?");
+
+/***/ }),
+
+/***/ "./Client/components/Home/Home.jsx":
+/*!*****************************************!*\
+  !*** ./Client/components/Home/Home.jsx ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar Home = function Home() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, \"The FIRST and LAST off-road stop!\");\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Home);\n\n//# sourceURL=webpack:///./Client/components/Home/Home.jsx?");
+
+/***/ }),
+
+/***/ "./Client/components/Login/Login.jsx":
+/*!*******************************************!*\
+  !*** ./Client/components/Login/Login.jsx ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar Login = function Login() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"form\", null);\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Login);\n\n//# sourceURL=webpack:///./Client/components/Login/Login.jsx?");
 
 /***/ }),
 
@@ -194,6 +242,30 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 
 /***/ }),
 
+/***/ "./Client/components/Signup/SignUp.jsx":
+/*!*********************************************!*\
+  !*** ./Client/components/Signup/SignUp.jsx ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar SignUp = function SignUp() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"form\", null);\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (SignUp);\n\n//# sourceURL=webpack:///./Client/components/Signup/SignUp.jsx?");
+
+/***/ }),
+
+/***/ "./Client/components/Trails/Trails.jsx":
+/*!*********************************************!*\
+  !*** ./Client/components/Trails/Trails.jsx ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar Trails = function Trails() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null);\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Trails);\n\n//# sourceURL=webpack:///./Client/components/Trails/Trails.jsx?");
+
+/***/ }),
+
 /***/ "./Client/components/index.jsx":
 /*!*************************************!*\
   !*** ./Client/components/index.jsx ***!
@@ -261,7 +333,7 @@ eval("\n\nmodule.exports = Point;\n\n/**\n * A standalone point geometry with us
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.i, \"\", \"\"]);\n// Exports\n/* harmony default export */ __webpack_exports__[\"default\"] = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack:///./Client/components/App/app.module.css?./node_modules/css-loader/dist/cjs.js??ref--5-1");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.i, \"._2ZJGRFrqYNMfXF2MIqVQof {  \\n  margin: 0px;\\n  padding: 10px;\\n  display: flex;\\n  justify-content: space-evenly;\\n  align-items: center;  \\n  font-family: 'Barlow Condensed', sans-serif;\\n  font-size: 26px;\\n}\\nspan:hover {\\n  cursor: pointer;\\n\\n}\\n\\n\", \"\"]);\n// Exports\n___CSS_LOADER_EXPORT___.locals = {\n\t\"nav\": \"_2ZJGRFrqYNMfXF2MIqVQof\"\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack:///./Client/components/App/app.module.css?./node_modules/css-loader/dist/cjs.js??ref--5-1");
 
 /***/ }),
 

@@ -1,4 +1,4 @@
-import React from 'React';
+import React from 'react';
 
 
 const Home = () => {
@@ -6,7 +6,7 @@ const Home = () => {
 
   return (
     <div>
-        
+      The FIRST and LAST off-road stop!
     </div>
   )
 
