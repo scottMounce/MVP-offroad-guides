@@ -1,0 +1,14 @@
+.backGround {  
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+
+.tagLine {  
+  font-size: 25px;
+  z-index: 1;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;  
+}
